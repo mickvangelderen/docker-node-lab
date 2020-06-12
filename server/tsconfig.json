@@ -1,0 +1,9 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "strict": true,
+        "sourceMap": true,
+        "rootDir": "src/",
+        "outDir": "dist/",
+    }
+}

@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+    server:
+        build: ./server/
+        ports: 
+            - "3000:3000"
+        environment:
+            - DATABASE_USERNAME=SA
+            - DATABASE_PASSWORD=abYCy4CFFKfaEQNL
+
+    database:
+        build: ./database/
+        volumes:
+            - ./database/data:/var/opt/mssql/data
+        ports:
+            - "1433:1433"
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=abYCy4CFFKfaEQNL

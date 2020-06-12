@@ -1,0 +1,16 @@
+{
+    "name": "docker-node-lab",
+    "version": "0.0.0",
+    "scripts": {
+        "start": "node dist/index.js",
+        "watch": "tsc --watch",
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "@types/tedious": "^4.0.1",
+        "typescript": "^3.9.5"
+    },
+    "dependencies": {
+        "tedious": "^8.3.0"
+    }
+}
