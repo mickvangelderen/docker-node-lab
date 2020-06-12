@@ -8,6 +8,8 @@
     },
     "devDependencies": {
         "@types/tedious": "^4.0.1",
+        "funko": "*",
+        "nodemon": "^2.0.4",
         "typescript": "^3.9.5"
     },
     "dependencies": {

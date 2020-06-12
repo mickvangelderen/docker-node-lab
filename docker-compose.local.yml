@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+    database:
+        build: ./database/
+        volumes:
+            - ./database/data:/var/opt/mssql/data
+        ports:
+            - "1434:1433"
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=abYCy4CFFKfaEQNL

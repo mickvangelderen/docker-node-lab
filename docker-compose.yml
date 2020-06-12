@@ -3,9 +3,12 @@ version: "3.8"
 services:
     server:
         build: ./server/
+        volumes:
+            - ./server/:/usr/src/server/
         ports: 
             - "3000:3000"
         environment:
+            - DATABASE_HOST=database
             - DATABASE_USERNAME=SA
             - DATABASE_PASSWORD=abYCy4CFFKfaEQNL
 
